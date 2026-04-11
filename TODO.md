@@ -1,16 +1,25 @@
-# Cloudhaven Website Fix: Resolve Roblox API "Failed to fetch" Errors
+# GitHub Pages Deployment TODO
 
-## Status: In Progress
+## Status: Started
 
-### Plan Breakdown:
-1. ✅ [Complete] Understand files and create detailed edit plan
-2. ✅ [Complete] Get user approval on plan  
-3. 🔄 [Active] Create API route: `/cloudhaven-site/src/app/api/stats/route.ts` (server-side Roblox stats fetch)
-4. [Pending] Edit `cloudhaven-site/src/app/page.tsx` (replace client fetches with `/api/stats`)
-5. [Pending] Test: `cd cloudhaven-site && npm run dev`, verify no console errors + stats load
-6. [Pending] Update TODO.md with test results
-7. [Pending] attempt_completion
+**Plan Summary:**
+- Delete vercel.json
+- Update package.json (add deploy script, gh-pages dep)
+- Update README.md (GitHub Pages instructions)
+- Update TODO.md
+- Create public/.nojekyll
+- Test: npm install && npm run build
+- Deploy: npm run deploy
 
-**Next step:** Implement API route.
+**Steps:**
 
+- [✅] 3. Edit cloudhaven-site/README.md
+- [ ] 4. Edit cloudhaven-site/TODO.md (current)
+- [✅] 5. Create cloudhaven-site/public/.nojekyll
+- [ ] 6. cd cloudhaven-site && npm install
+- [ ] 7. npm run build (verify /out)
+- [ ] 8. npm run deploy (gh-pages branch)
 
+**Next:** Install deps, build, deploy
+
+Next: Step 1-2

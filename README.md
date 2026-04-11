@@ -1,31 +1,14 @@
-# cloudhaven-website
+# SlimTrixDev Website
 
-## 🚀 Deploy to Vercel (One-Click)
+Simple static HTML/CSS/JS site for GitHub Pages.
 
-1. **Connect GitHub repo to Vercel**:
-   ```
-   npm i -g vercel
-   cd cloudhaven-site
-   vercel login
-   vercel --prod
-   ```
+## Preview
+Open `index.html` in browser.
 
-2. **Or GitHub Integration**:
-   - Push to GitHub
-   - vercel.com → New Project → Import GitHub repo
-   - Deploy!
+## Deploy to GitHub Pages
+1. Commit/push to GitHub repo.
+2. Settings > Pages > Source: Deploy from branch > main/root.
 
-**Production URL**: Auto-assigned or custom domain.
+Live at `https://<username>.github.io/<repo>`.
 
-**Build Command**: `npm run build` (auto-detected)
-**Output Directory**: `.next`
-**Install Command**: `npm ci`
-
-## Local Development
-```bash
-cd cloudhaven-site
-npm install
-npm run dev
-```
-
-Open http://localhost:3000
+Update `stats.json` for Roblox game stats.

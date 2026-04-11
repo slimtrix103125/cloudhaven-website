@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SlimTrixDev</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-text">Slim<span>Trix</span>Dev</div>
+    <ul class="nav-links">
+      <li><a href="#games">Games</a></li>
+      <li><a href="#support">Support</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#careers">Careers</a></li>
+      <li>
+        <a href="https://discord.gg/hzwyxR6JBy" target="_blank" rel="noopener noreferrer" class="discord-btn">
+          Join Discord
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <div class="hero-eyebrow">Independent Game Studio</div>
+      <h1>We Make Games<br /><span>People Love</span></h1>
+      <p>SlimTrixDev is an independent studio building fun, addictive Roblox experiences for players everywhere.</p>
+      <div class="hero-cta">
+        <button class="btn" onclick="scrollToSection('games')">Explore Our Games</button>
+        <a class="btn btn-outline" onclick="scrollToSection('community')">Join Community</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skylands -->
+  <section class="section" style="background: var(--bg-secondary)">
+    <p class="section-label">Coming Soon</p>
+    <h2 class="section-title">Skylands [BETA]</h2>
+    <div class="divider" style="margin-bottom: 48px;"></div>
+    <div class="airship-card">
+      <div class="airship-badge">Early Development</div>
+      <h3 class="airship-title">Our Next Big Project</h3>
+      <p class="airship-desc">
+        Skylands [BETA] is our ambitious new Roblox experience, currently deep in development.
+        Something big is on the horizon — stay tuned.
+      </p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Games -->
+  <section id="games" class="section">
+    <p class="section-label">Roblox Experiences</p>
+    <h2 class="section-title">Our Games</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Play our latest releases directly on Roblox</p>
+
+    <div class="game-card">
+      <div class="game-thumbnail">
+        <div id="thumb-skeleton" class="thumb-skeleton"></div>
+        <img id="game-thumb" src="" alt="" style="display: none;">
+        <div id="thumb-fallback" class="thumb-fallback" style="display: none;">UNTITLED EXPERIENCE</div>
+        <div class="live-badge">
+          <span class="live-dot"></span>
+          Live
+        </div>
+      </div>
+
+      <div class="game-body">
+        <div id="game-name" class="game-name">Untitled Experience</div>
+        <div class="game-desc">Our flagship Roblox game — jump in and play now.</div>
+        <div class="game-divider"></div>
+
+        <div class="game-stats">
+          <div class="stat-item">
+            <span id="stat-playing" class="stat-value loading">&nbsp;</span>
+            <span class="stat-label">Playing</span>
+          </div>
+          <div class="stat-item">
+            <span id="stat-visits" class="stat-value loading">&nbsp;</span>
+            <span class="stat-label">Visits</span>
+          </div>
+          <div class="stat-item">
+            <span id="stat-fav" class="stat-value loading">&nbsp;</span>
+            <span class="stat-label">Favourites</span>
+          </div>
+        </div>
+
+        <a href="https://www.roblox.com/games/99315973333625/Untitled-Experience" target="_blank" rel="noopener noreferrer" class="btn btn-play">
+          Play Now on Roblox
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support -->
+  <section id="support" class="section" style="background: var(--bg-secondary)">
+    <p class="section-label">We're Here to Help</p>
+    <h2 class="section-title">Support</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Got a question, bug report, or feedback? Reach out and we'll get back to you.</p>
+    <div class="support-card">
+      <p style="color: var(--text-muted); margin-bottom: 28px; line-height: 1.7; font-size: 0.95rem;">
+        We're a small team and we read every message. Whether it's a technical issue or a
+        general inquiry, don't hesitate to email us directly.
+      </p>
+      <a href="mailto:slimtrixdev.gg@protonmail.com" class="btn">Email Us</a>
+      <p style="margin-top: 18px; color: var(--text-muted); font-size: 0.85rem;">
+        slimtrixdev.gg@protonmail.com
+      </p>
+    </div>
+  </section>
+
+  <!-- Community -->
+  <section id="community" class="section">
+    <p class="section-label">Growing Together</p>
+    <h2 class="section-title">Community</h2>
+    <div class="divider"></div>
+    <p class="section-sub">
+      We've built a <strong style="color: var(--easy-red);">thriving</strong> community
+      of players and creators around our games.
+    </p>
+    <div style="display: flex; justify-content: center; gap: clamp(32px, 6vw, 80px); flex-wrap: wrap;">
+      <div style="text-align: center;">
+        <div class="community-stat">50+</div>
+        <div style="color: var(--text-muted); margin-top: 6px; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;">Players</div>
+      </div>
+      <div style="text-align: center;">
+        <div class="community-stat">500+</div>
+        <div style="color: var(--text-muted); margin-top: 6px; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;">Discord Members</div>
+      </div>
+      <div style="text-align: center;">
+        <div class="community-stat">1</div>
+        <div style="color: var(--text-muted); margin-top: 6px; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;">Games</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers -->
+  <section id="careers" class="section" style="background: var(--bg-secondary)">
+    <p class="section-label">Join the Team</p>
+    <h2 class="section-title">Careers</h2>
+    <div class="divider"></div>
+    <p class="section-sub">We're always looking for passionate people to help us build great games.</p>
+    <div class="careers-grid">
+      <div class="position-card">
+        <div class="position-type">Development</div>
+        <div class="position-title">Roblox Developer</div>
+        <div class="position-desc">Build and ship gameplay systems using Luau in Roblox Studio.</div>
+      </div>
+      <div class="position-card">
+        <div class="position-type">Design</div>
+        <div class="position-title">UI/UX Designer</div>
+        <div class="position-desc">Design beautiful, intuitive interfaces for our experiences.</div>
+      </div>
+      <div class="position-card">
+        <div class="position-type">Marketing</div>
+        <div class="position-title">Community Manager</div>
+        <div class="position-desc">Grow and engage our player community across platforms.</div>
+      </div>
+    </div>
+    <a href="mailto:slimtrixdev.gg@protonmail.com" class="btn">Apply Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo-text">Slim<span style="color: var(--easy-red);">Trix</span>Dev</div>
+        <p>An independent game development studio creating fun and addictive Roblox experiences.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <a href="mailto:slimtrixdev.gg@protonmail.com" class="footer-email">
+          slimtrixdev.gg@protonmail.com
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 SlimTrixDev — All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    let statsLoading = true;
+    let stats = {
+      playing: 0,
+      visits: 0,
+      favoritedCount: 0,
+      thumbnail: null,
+      name: 'Untitled Experience'
+    };
+
+    const formatNum = (n) => {
+      if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + 'M';
+      if (n >= 1_000) return (n / 1_000).toFixed(1) + 'K';
+      return n.toLocaleString();
+    };
+
+    const updateStats = () => {
+      document.getElementById('stat-playing').textContent = formatNum(stats.playing);
+      document.getElementById('stat-visits').textContent = formatNum(stats.visits);
+      document.getElementById('stat-fav').textContent = formatNum(stats.favoritedCount);
+      document.getElementById('game-name').textContent = stats.name;
+      const thumb = document.getElementById('game-thumb');
+      const fallback = document.getElementById('thumb-fallback');
+      const skeleton = document.getElementById('thumb-skeleton');
+      if (stats.thumbnail) {
+        thumb.src = stats.thumbnail;
+        thumb.style.display = 'block';
+        fallback.style.display = 'none';
+      } else {
+        thumb.style.display = 'none';
+        fallback.style.display = 'flex';
+      }
+      skeleton.style.display = 'none';
+      document.querySelector('.game-stats').classList.remove('loading'); // remove loading from all
+      Array.from(document.querySelectorAll('.stat-value')).forEach(el => el.classList.remove('loading'));
+    };
+
+    const fetchStats = async () => {
+      try {
+        const res = await fetch('stats.json');
+        const data = await res.json();
+        if (data.error) {
+          console.error('Stats error:', data.error);
+          stats = { playing: 0, visits: 0, favoritedCount: 0, name: 'Untitled Experience', thumbnail: null, error: data.error };
+        } else {
+          stats = data;
+        }
+      } catch (e) {
+        console.error('Fetch failed:', e);
+        stats = { playing: 0, visits: 0, favoritedCount: 0, name: 'Untitled Experience', thumbnail: null, error: 'Network error' };
+      } finally {
+        statsLoading = false;
+        updateStats();
+      }
+    };
+
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        const navbarHeight = 80;
+        const offsetPosition = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      }
+    }
+
+    // Init
+    fetchStats();
+    setInterval(fetchStats, 60000);
+  </script>
+</body>
+</html>
